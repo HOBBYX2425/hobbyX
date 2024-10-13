@@ -13,24 +13,34 @@
         android:theme="@style/Theme.HobbyX"
         tools:targetApi="31">
         <activity
-            android:name=".Activityes.MainActivity"
+            android:name=".Sclscreen"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Activityes.Login"
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+        <activity
+            android:name=".Activityes.MainActivity"
             android:exported="false"/>
-        <activity android:name=".Activityes.LoginOtpActivity"
-            android:exported="false"/>
-        <activity android:name=".Activityes.loginPhoneNumberActivity"
-            android:exported="false"/>
-        <activity android:name=".Activityes.LoginUsernameActivity"
-            android:exported="false"/>
-        <activity android:name=".Activityes.Registration"
-            android:exported="false"/>
+
+        <activity
+            android:name=".Activityes.Login"
+            android:exported="false" />
+        <activity
+            android:name=".Activityes.LoginOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activityes.loginPhoneNumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activityes.LoginUsernameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activityes.Registration"
+            android:exported="false" />
     </application>
 
 </manifest>
