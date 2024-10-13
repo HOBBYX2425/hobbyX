@@ -6,4 +6,15 @@
     </style>
 
     <style name="Theme.HobbyX" parent="Base.Theme.HobbyX" />
+
+
+    <style name="arancBar" parent="Base.Theme.HobbyX">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:background">@null</item>
+    </style>
+
 </resources>

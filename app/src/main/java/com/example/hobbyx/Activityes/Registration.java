@@ -83,6 +83,7 @@ public class Registration extends  AppCompatActivity {
             public void onClick(View v) {
                 Intent intent1 = new Intent(Registration.this, loginPhoneNumberActivity.class);
                 intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 startActivity(intent1);
             }
         });
@@ -138,6 +139,7 @@ public class Registration extends  AppCompatActivity {
 
                                      Intent intent = new Intent(Registration.this, Login.class);
                                      intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK);
+                                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                                      startActivity(intent);
                                  }
                              });
@@ -187,6 +189,7 @@ public class Registration extends  AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), Login.class));
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });
 

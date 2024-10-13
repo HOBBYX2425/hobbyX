@@ -99,6 +99,8 @@ public class Login extends AppCompatActivity {
                                                     Intent intent = new Intent(Login.this, MainActivity.class);
                                                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK);
                                                     startActivity(intent);
+                                                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+
                                                     finish();
 
 
@@ -167,6 +169,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Login.this, Registration.class));
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });
     }

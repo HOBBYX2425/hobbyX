@@ -131,6 +131,7 @@ public class LoginOtpActivity extends AppCompatActivity {
 
      Intent intent = new Intent(LoginOtpActivity.this, LoginUsernameActivity.class);
      intent.putExtra("phone",phoneNumber);
+     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
      startActivity(intent);
 
     }else{

@@ -24,22 +24,28 @@
 
         <activity
             android:name=".Activityes.MainActivity"
+            android:theme="@style/arancBar"
             android:exported="false"/>
 
         <activity
             android:name=".Activityes.Login"
+            android:theme="@style/arancBar"
             android:exported="false" />
         <activity
             android:name=".Activityes.LoginOtpActivity"
+            android:theme="@style/arancBar"
             android:exported="false" />
         <activity
             android:name=".Activityes.loginPhoneNumberActivity"
+            android:theme="@style/arancBar"
             android:exported="false" />
         <activity
             android:name=".Activityes.LoginUsernameActivity"
+            android:theme="@style/arancBar"
             android:exported="false" />
         <activity
             android:name=".Activityes.Registration"
+            android:theme="@style/arancBar"
             android:exported="false" />
     </application>
 

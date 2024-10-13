@@ -36,6 +36,7 @@ public class loginPhoneNumberActivity extends AppCompatActivity {
             }
             Intent intent = new Intent(loginPhoneNumberActivity.this, LoginOtpActivity.class);
             intent.putExtra("phone",countryCodePicker.getFullNumberWithPlus());
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             startActivity(intent);
 
         });
