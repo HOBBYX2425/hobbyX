@@ -25,7 +25,7 @@ public class Sclscreen extends AppCompatActivity {
                 try {
                     sleep(3000);
                     startActivity(new Intent(Sclscreen.this, Login.class));
-                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                    overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                     finish();
                 } catch(Exception e) {
                     e.printStackTrace();
