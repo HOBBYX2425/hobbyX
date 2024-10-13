@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "238002055869",
+    "project_id": "hobbyx-13167",
+    "storage_bucket": "hobbyx-13167.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238002055869:android:146e72cfdaa482ff3225d4",
+        "android_client_info": {
+          "package_name": "com.example.hobbyx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO8RPwElZDhl2QOY-SkOmt2ch14loC4ag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
