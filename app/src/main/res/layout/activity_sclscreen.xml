@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="@color/white"
-    tools:context=".Sclscreen">
+    tools:context=".Activityes.Start_Activity">
 
 
     <com.airbnb.lottie.LottieAnimationView

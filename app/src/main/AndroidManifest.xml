@@ -13,7 +13,7 @@
         android:theme="@style/Theme.HobbyX"
         tools:targetApi="31">
         <activity
-            android:name=".Sclscreen"
+            android:name=".Activityes.Start_Activity"
             android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
