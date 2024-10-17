@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EFEFEF"
+    android:background="#FFFFFF"
     tools:context=".Activityes.Login">
 
 
@@ -16,17 +16,15 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_235sdp"
-
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="100dp"
                 android:layout_gravity="center"
-                android:background="@drawable/reg_log_bkg" />
+                android:background="@drawable/login_icon" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/reg_log_background"
-
                 android:orientation="vertical"
 
                 >
@@ -38,7 +36,7 @@
                     android:layout_marginTop="@dimen/_6sdp"
                     android:text="Login"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_28sdp"
+                    android:textSize="65dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -51,17 +49,19 @@
                     android:textSize="@dimen/_14sdp"
                     android:textStyle="bold" />
 
+
                 <EditText
                     android:id="@+id/Email"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_33sdp"
-                    android:textSize="@dimen/_13sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginHorizontal="@dimen/_28sdp"
-                    android:maxLength="35"
+                    android:layout_marginTop="@dimen/_5sdp"
                     android:background="@drawable/forget"
                     android:hint="Enter the Email"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"
+                    android:maxLength="35"
+                    android:paddingLeft="20dp"
+                    android:textSize="@dimen/_13sdp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -79,11 +79,12 @@
                     android:layout_height="@dimen/_33sdp"
                     android:layout_marginHorizontal="@dimen/_28sdp"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:textSize="@dimen/_13sdp"
                     android:background="@drawable/forget"
                     android:hint="Enter the Password"
+                    android:inputType="textPassword"
                     android:maxLength="35"
-                    android:inputType="textPassword" />
+                    android:paddingLeft="20dp"
+                    android:textSize="@dimen/_13sdp" />
 
                 <TextView
                     android:id="@+id/forgotPassword"
@@ -113,13 +114,13 @@
                 <Button
                     android:id="@+id/loginBtn"
                     android:layout_width="@dimen/_140sdp"
-                    android:layout_height="@dimen/_35sdp"
+                    android:layout_height="@dimen/_44sdp"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/btn"
-                    android:textSize="@dimen/_13sdp"
+                    android:backgroundTint="@color/black"
                     android:text="Login"
-                    android:textColor="#fff" />
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_20sdp" />
 
                 <TextView
                     android:id="@+id/createText"

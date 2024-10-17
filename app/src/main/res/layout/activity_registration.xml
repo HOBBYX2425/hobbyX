@@ -15,17 +15,16 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_235sdp"
-
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="80dp"
             android:layout_gravity="center"
-            android:background="@drawable/reg_log_bkg" />
+            android:background="@drawable/register" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/reg_log_background"
-            android:layout_marginTop="-20dp"
+            android:layout_marginTop="-6dp"
             android:orientation="vertical">
 
             <TextView
@@ -58,6 +57,7 @@
                 android:background="@drawable/forget"
                 android:hint="Enter the Name"
                 android:maxLength="25"
+                android:paddingLeft="20dp"
                 android:inputType="text" />
 
             <TextView
@@ -76,11 +76,10 @@
                 android:layout_height="@dimen/_33sdp"
                 android:layout_marginHorizontal="@dimen/_28sdp"
                 android:layout_marginTop="@dimen/_5sdp"
-
+                android:paddingLeft="20dp"
                 android:textSize="@dimen/_13sdp"
                 android:background="@drawable/forget"
                 android:hint="Enter the Email"
-
                 android:maxLength="35"
                 android:inputType="textEmailAddress" />
 
@@ -103,6 +102,7 @@
                 android:textSize="@dimen/_13sdp"
                 android:background="@drawable/forget"
                 android:hint="Enter the Password"
+                android:paddingLeft="20dp"
                 android:maxLength="35"
                 android:inputType="textPassword" />
 
@@ -125,7 +125,8 @@
                 android:textSize="@dimen/_13sdp"
                 android:background="@drawable/forget"
                 android:maxLength="35"
-                android:hint="Enter the Confirm Password"
+                android:paddingLeft="20dp"
+                android:hint="nter the Confirm Password"
                 android:inputType="textPassword" />
 
             <ProgressBar
@@ -145,10 +146,10 @@
             <Button
                 android:id="@+id/registerBtn"
                 android:layout_width="@dimen/_150sdp"
-                android:layout_height="@dimen/_35sdp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_15sdp"
-                android:background="@drawable/btn"
+                android:backgroundTint="@color/black"
                 android:text="Register"
                 android:textSize="@dimen/_14sdp"
                 android:textColor="@color/white" />

@@ -39,4 +39,7 @@ public class Account_Fragment extends Fragment {
     void init(View view){
 
     }
+
+
+
 }
