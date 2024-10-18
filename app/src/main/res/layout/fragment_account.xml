@@ -5,9 +5,16 @@
     tools:context="Fragments.Account_Fragment">
 
     <Button
+        android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="logout"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginLeft="150dp"
+        android:backgroundTint ="@color/black"
         android:onClick="logout"/>
+
+
 
 </LinearLayout>

@@ -61,6 +61,8 @@ dependencies {
     implementation(platform(libs.firebase.bom))
     implementation(libs.google.firebase.auth)
     implementation(libs.firebase.ui.firestore)
+
+
     //dependencies {
     //    // FirebaseUI for Firebase Realtime Database
     //    implementation(libs.firebase.ui.database)

@@ -174,5 +174,29 @@ public class Login extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
             }
         });
+
+
+
     }
+
+
+    public void  onBackPressed(){
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(Login.this);
+        alertDialog.setTitle("Выход с приложения");
+        alertDialog.setMessage("Вы хотите выйти из приложения?");
+        alertDialog.setPositiveButton("Да",new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finishAffinity();
+            }
+        });
+        alertDialog.setNegativeButton("Нет", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        alertDialog.show();
+    }
+
 }

@@ -1,9 +1,13 @@
 package com.example.hobbyx.Activityes;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -15,6 +19,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 import Fragments.Account_Fragment;
@@ -27,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     Community_Fragment communityFragment;
     Hobby_Fragment hobbyFragment;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         communityFragment = new Community_Fragment();
         hobbyFragment = new Hobby_Fragment();
         bottomNavigationView = findViewById(R.id.bottom_navigation);
+
 
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -61,6 +68,9 @@ public class MainActivity extends AppCompatActivity {
         getFCMToken();
 
 
+
+
+
     }
     private void getFCMToken() {
         FirebaseMessaging.getInstance().getToken().addOnCompleteListener(new OnCompleteListener<String>() {
@@ -80,4 +90,26 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void  onBackPressed(){
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
+        alertDialog.setTitle("Выход с приложения");
+        alertDialog.setMessage("Вы хотите выйти из приложения?");
+        alertDialog.setPositiveButton("Да",new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finishAffinity();
+            }
+        });
+        alertDialog.setNegativeButton("Нет", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        alertDialog.show();
     }
+
+
+
+
+}

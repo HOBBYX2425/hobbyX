@@ -1,6 +1,8 @@
 package com.example.hobbyx.Activityes;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -193,5 +195,24 @@ public class Registration extends  AppCompatActivity {
             }
         });
 
+    }
+
+    public void  onBackPressed(){
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(Registration.this);
+        alertDialog.setTitle("Выход с приложения");
+        alertDialog.setMessage("Вы хотите выйти из приложения?");
+        alertDialog.setPositiveButton("Да",new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finishAffinity();
+            }
+        });
+        alertDialog.setNegativeButton("Нет", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        alertDialog.show();
     }
 }
