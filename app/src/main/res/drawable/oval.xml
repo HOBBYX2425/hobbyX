@@ -1,5 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="oval">
-    <stroke android:color="@color/black" android:width="5dp"/>
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent"/> <!-- Фон прозрачный -->
+            <stroke
+                android:width="50dp"
+            android:color="@color/black"/>
+        </shape>
+    </item>
+</layer-list>
