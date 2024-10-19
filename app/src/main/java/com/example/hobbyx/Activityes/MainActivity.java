@@ -2,12 +2,9 @@ package com.example.hobbyx.Activityes;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -19,12 +16,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.messaging.FirebaseMessaging;
 
-import Fragments.Account_Fragment;
-import Fragments.Community_Fragment;
-import Fragments.Hobby_Fragment;
+import com.example.hobbyx.Fragments.Account_Fragment;
+import com.example.hobbyx.Fragments.Community_Fragment;
+import com.example.hobbyx.Fragments.Hobby_Fragment;
 
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;

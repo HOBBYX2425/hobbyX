@@ -1,4 +1,4 @@
-package Fragments;
+package com.example.hobbyx.Fragments;
 
 import android.os.Bundle;
 
@@ -14,12 +14,10 @@ import com.example.hobbyx.R;
 
 
 
-public class Community_Fragment extends Fragment {
-
-
-    public Community_Fragment() {
-
+public class Hobby_Fragment extends Fragment {
+    public Hobby_Fragment() {
     }
+
 
 
 
@@ -27,7 +25,7 @@ public class Community_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_community, container, false);
+        return inflater.inflate(R.layout.hobby, container, false);
     }
 
     @Override

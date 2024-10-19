@@ -3,7 +3,7 @@
         <shape android:shape="oval">
             <solid android:color="@android:color/transparent"/> <!-- Фон прозрачный -->
             <stroke
-                android:width="50dp"
+                android:width="1dp"
             android:color="@color/black"/>
         </shape>
     </item>
