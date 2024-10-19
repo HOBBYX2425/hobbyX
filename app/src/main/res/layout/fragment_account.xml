@@ -53,16 +53,7 @@
             android:text="bio"/>
         </LinearLayout>
 
-        <Button
-            android:id="@+id/logout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="logout"
-            android:textStyle="bold"
-            android:backgroundTint="@color/black"
-            android:onClick="logout"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"/>
+
     </RelativeLayout>
 
 

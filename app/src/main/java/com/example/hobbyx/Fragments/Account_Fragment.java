@@ -79,14 +79,7 @@ public class Account_Fragment extends Fragment {
         mAuth = FirebaseAuth.getInstance();
         profImage = view.findViewById(R.id.profile_image);
 
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(getActivity(), Login.class);
-                startActivity(intent);
-            }
-        });
+
         profImage.setOnClickListener(v -> {
             // Анимация перемещения кнопки в центр
             ObjectAnimator moveX = ObjectAnimator.ofFloat(profImage, "translationX", 500 - profImage.getX());
@@ -105,9 +98,16 @@ public class Account_Fragment extends Fragment {
                     dialogSheet.getWindow().setBackgroundDrawableResource(R.drawable.bt_navigation_bg);
 
                     LinearLayout settings = dialogSheet.findViewById(R.id.settings);
+                    LinearLayout logOut = dialogSheet.findViewById(R.id.logout);
 
                     settings.setOnClickListener(view1 -> {
                         Intent intent = new Intent(getActivity(), Settings.class);
+                        startActivity(intent);
+                    });
+
+                    logOut.setOnClickListener(view12 -> {
+                        FirebaseAuth.getInstance().signOut();
+                        Intent intent = new Intent(getActivity(), Login.class);
                         startActivity(intent);
                     });
 
